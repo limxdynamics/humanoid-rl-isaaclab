@@ -147,11 +147,12 @@ python scripts/rsl_rl/train.py --headless --task LimX-Oli-31dof-Velocity
 检查点保存在 `logs/rsl_rl/ppo/<日期-时间>/model_<迭代次数>.pt`。
 可加 `--num_envs N` 降低显存占用，或加 `--max_iterations N` 提前结束。
 
-- 回放并导出模型，需要指定要加载的检查点：
+- 回放并导出最新训练的模型：
 ``` sh
-python scripts/rsl_rl/play.py --task LimX-Oli-31dof-Velocity-Play \
-  --checkpoint logs/rsl_rl/ppo/<日期-时间>/model_<迭代次数>.pt
+python scripts/rsl_rl/play.py --task LimX-Oli-31dof-Velocity-Play
 ```
+默认加载 `logs/rsl_rl/ppo/` 下最新一次训练中最新的 `model_*.pt`。可用 `--load_run <日期-时间>`
+指定某次训练，或用 `--checkpoint <模型路径>` 加载指定文件。
 同时会在 `logs/rsl_rl/ppo/<日期-时间>/exported/` 下导出 `policy.onnx` 与 `policy.pt`。
 
 ## 模型部署
@@ -165,8 +166,9 @@ python scripts/rsl_rl/play.py --task LimX-Oli-31dof-Velocity-Play \
 
 ## 许可证
 
-本仓库代码以 [Apache License 2.0](LICENSE) 发布。内置的 [`rsl_rl_lib`](rsl_rl_lib)
-保留其自身的 [BSD-3-Clause 许可证](rsl_rl_lib/LICENSE)。
+本仓库的自研代码以 [Apache License 2.0](LICENSE) 发布。源自 Isaac Lab 的文件与内置的
+[`rsl_rl_lib`](rsl_rl_lib) 保留各自的 BSD-3-Clause 许可证，文件清单与许可证全文见
+[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)。
 
 ## 致谢
 本项目基于以下优秀项目构建：

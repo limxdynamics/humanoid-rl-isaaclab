@@ -1,0 +1,22 @@
+# Robot description cloned into the repository root (see README, Installation)
+/humanoid-description/
+
+# Training and evaluation outputs
+/logs/
+/outputs/
+/wandb/
+*.onnx
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    name: Static checks (no Isaac Sim)
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install test dependencies
+        run: python -m pip install pytest pillow
+
+      - name: Byte-compile all Python sources
+        run: python -m compileall -q scripts source rsl_rl_lib tests
+
+      - name: Run tests
+        run: python -m pytest -q tests

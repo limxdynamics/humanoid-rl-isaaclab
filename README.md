@@ -156,11 +156,13 @@ python scripts/rsl_rl/train.py --headless --task LimX-Oli-31dof-Velocity
 Checkpoints are written to `logs/rsl_rl/ppo/<date-time>/model_<iteration>.pt`.
 Add `--num_envs N` to reduce GPU memory use, or `--max_iterations N` to stop earlier.
 
-- Evaluate a trained agent and export it. Pass the checkpoint you want to replay:
+- Evaluate the latest trained agent and export it:
 ``` sh
-python scripts/rsl_rl/play.py --task LimX-Oli-31dof-Velocity-Play \
-  --checkpoint logs/rsl_rl/ppo/<date-time>/model_<iteration>.pt
+python scripts/rsl_rl/play.py --task LimX-Oli-31dof-Velocity-Play
 ```
+By default this loads the newest `model_*.pt` from the newest run in
+`logs/rsl_rl/ppo/`. Use `--load_run <date-time>` to pick a run, or
+`--checkpoint <path/to/model.pt>` to load a specific file.
 This also writes `policy.onnx` and `policy.pt` to
 `logs/rsl_rl/ppo/<date-time>/exported/`.
 
@@ -176,9 +178,10 @@ humanoid-rl-deploy-python, then follow its MuJoCo and real-robot steps.
 
 ## License
 
-The code in this repository is released under the [Apache License 2.0](LICENSE).
-The bundled [`rsl_rl_lib`](rsl_rl_lib) keeps its own
-[BSD-3-Clause license](rsl_rl_lib/LICENSE).
+The original code in this repository is released under the
+[Apache License 2.0](LICENSE). Files derived from Isaac Lab and the bundled
+[`rsl_rl_lib`](rsl_rl_lib) keep their BSD-3-Clause licenses; see
+[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) for the file list and license texts.
 
 ## Acknowledgments
 This project is built upon several excellent projects:
