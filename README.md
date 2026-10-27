@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-3b82f6" alt="License: Apache-2.0"></a>
+  <a href="https://github.com/limxdynamics/humanoid-rl-isaaclab/actions/workflows/ci.yml"><img src="https://github.com/limxdynamics/humanoid-rl-isaaclab/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
   <img src="https://img.shields.io/badge/Python-3.10-3776ab" alt="Python 3.10">
   <a href="https://github.com/isaac-sim/IsaacLab/releases/tag/v2.0.0"><img src="https://img.shields.io/badge/Isaac%20Lab-2.0.0-76b900" alt="Isaac Lab 2.0.0"></a>
   <img src="https://img.shields.io/badge/Isaac%20Sim-4.5.0-76b900" alt="Isaac Sim 4.5.0">
