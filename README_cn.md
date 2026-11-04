@@ -17,6 +17,8 @@
 
 # humanoid-rl-isaaclab
 
+> **Oli 人形机器人开源生态的一部分。** 上手路线和其他 Oli 仓库：[Oli 快速上手](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart_cn.md#oli)。
+
 逐际动力 **Oli** 人形机器人的强化学习环境与训练脚本：在 Isaac Lab 中训练 31 自由度行走策略，
 导出为 ONNX，在 MuJoCo 中验证后部署到真机。
 

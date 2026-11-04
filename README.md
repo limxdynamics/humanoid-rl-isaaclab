@@ -17,6 +17,8 @@
 
 # humanoid-rl-isaaclab
 
+> **Part of the Oli humanoid open-source ecosystem.** Where to start and the other Oli repositories: [Oli quick start](https://github.com/limxdynamics/limxdynamics/blob/main/doc/quickstart.md#oli).
+
 Reinforcement learning environments and training scripts for the LimX Dynamics
 **Oli** humanoid: train a 31-DoF walking policy in Isaac Lab, export it to ONNX,
 check it in MuJoCo and run it on the real robot.
