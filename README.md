@@ -6,11 +6,6 @@
   <a href="README.md">English</a> | <a href="README_cn.md">中文</a>
 </p>
 
-<!-- limx-community:start -->
-<!-- Managed by limxdynamics/limxdynamics/.github/community/sync_community.py; QR code: doc/wechat_qr.png in that repo -->
-<p align="center"><a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/Join%20Our%20WeChat%20Community-All%20Projects%20Welcome-07C160?style=for-the-badge&logo=wechat&logoColor=white" alt="WeChat Community"></a></p>
-<!-- limx-community:end -->
-
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-3b82f6" alt="License: Apache-2.0"></a>
   <a href="https://github.com/limxdynamics/humanoid-rl-isaaclab/actions/workflows/ci.yml"><img src="https://github.com/limxdynamics/humanoid-rl-isaaclab/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI"></a>
@@ -18,6 +13,7 @@
   <a href="https://github.com/isaac-sim/IsaacLab/releases/tag/v2.0.0"><img src="https://img.shields.io/badge/Isaac%20Lab-2.0.0-76b900" alt="Isaac Lab 2.0.0"></a>
   <img src="https://img.shields.io/badge/Isaac%20Sim-4.5.0-76b900" alt="Isaac Sim 4.5.0">
   <img src="https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c" alt="PyTorch 2.5.1">
+  <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
 
 # humanoid-rl-isaaclab
