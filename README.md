@@ -15,6 +15,7 @@
   <img src="https://img.shields.io/badge/PyTorch-2.5.1-ee4c2c" alt="PyTorch 2.5.1">
   <a href="https://github.com/limxdynamics/limxdynamics/blob/main/doc/wechat_qr.png"><img src="https://img.shields.io/badge/WeChat-Developer%20Community-07C160?logo=wechat&logoColor=white" alt="WeChat Community"></a>
 </p>
+<p align="center"><sub>For partnership and procurement inquiries, contact <a href="mailto:opensource@limxdynamics.com">opensource@limxdynamics.com</a></sub></p>
 
 # humanoid-rl-isaaclab
 
